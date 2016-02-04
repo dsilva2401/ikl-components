@@ -1,0 +1,19 @@
+<div class="ikl-super-combo">
+
+	<button
+		class="selected-container"
+		style="
+			height: 50px;
+			width: 200px;
+		"
+		ng-click="models.isOpen=!models.isOpen"
+	>
+		Selected
+	</button>
+	<div ng-if="models.isOpen" class="options-container">
+
+		<ikl-super-combo-group collection='options'></ikl-super-combo-group>
+
+	</div>
+
+</div>

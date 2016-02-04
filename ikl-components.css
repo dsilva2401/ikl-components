@@ -1,0 +1,11 @@
+.ikl-super-combo .selected-container {
+	border: none;
+	margin-bottom: 0px;
+}
+
+.ikl-super-combo .options-container {
+	padding: 0px;
+	margin-top: 0px;
+	background: #ddd;
+	width: 300px;
+}

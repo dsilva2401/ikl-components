@@ -1,0 +1,49 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="../ikl-components.css">
+	</head>
+
+	<body ng-app="app" ng-controller="c">
+
+		<ikl-super-combo options="options"></ikl-super-combo>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<script src="../ikl-components.js"></script>
+		<script type="text/javascript">
+			angular.module('app', ['ikl-components'])
+			.controller('c', function ($scope) {
+
+				$scope.options = [
+				    {
+				    		id: 1,
+				      		name: 'Europe',
+							children: [
+								{
+									id: 2,
+									name: 'Italy',
+									children: [
+										{ id: 3, name: 'Rome' },
+										{ id: 4, name: 'Milan'    }
+									]
+								},
+								{ id: 5, name: 'Spain' }
+							]
+					},
+					{
+						id: 6,
+						name: 'South America',
+						children: [
+							{ id: 7, name: 'Brasil' },
+							{ id: 8, name: 'Peru' }
+						]
+					}
+			  ];
+
+				
+			});
+		</script>
+	</body>
+
+</html>
